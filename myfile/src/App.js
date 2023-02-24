@@ -1,37 +1,20 @@
 import './App.css';
-// import NavBar from './Component/NavBar';
-// import Accordion from './Component/Accordion';
-import Dice from './Component/Dice';
 import React, { useState } from 'react'
+// import {useLayoutEffect} from 'react'
+import DiceMain from './Component/DiceMain';
+import DicePlay from './Component/DicePlay';
 
 function App() {
-  const [darkMode,SetDarkMode]=useState({
-    color:"black",
-    backgroundColor:"white"
-})
-const test=()=>{
-   if(darkMode.backgroundColor==="white"){
-    
-    SetDarkMode({
-      
-        color:"white",
-        backgroundColor:"black"
-    })
-   }else{
-    
-    SetDarkMode({
-        color:"black",
-        backgroundColor:"white"
-    })
-   }
-}
-
+  
+// useLayoutEffect(() => {
+//   document.body.style.backgroundColor = darkMode.backgroundColor;
+// });
   return (
     <>  
     
-    {/* <NavBar darkMode={darkMode} test={test}/> */}
-    {/* <Accordion darkMode={darkMode} test={test}/> */}
-    <Dice/>
+    {/* <DiceMain/> */}
+    <DicePlay/>
+    
     
     </>
   );
